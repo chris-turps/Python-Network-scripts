@@ -1,0 +1,9 @@
+#unreachable IP address
+#212.212.11.65
+#deliberately blank line
+# gns3 R1
+1.1.1.2
+# gns3 R2
+1.1.1.3
+# gns3 R3
+1.1.1.4

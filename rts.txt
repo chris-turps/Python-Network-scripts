@@ -1,0 +1,54 @@
+hostname ar0-sky.scedi
+
+ip vrf BSKYB-ESM
+
+ rd 65444:4103
+
+ route-target export 4589:44001941
+
+ route-target import 4589:44001941
+
+ route-target import 4589:99000015
+
+ route-target import 4589:44440921
+
+ route-target import 65444:1045
+
+ route-target import 4589:44440679
+
+ip vrf BSKYB-SRDF-STORAGE
+
+ rd 65444:2409
+
+ route-target export 65444:2400
+
+ route-target import 65444:2400
+
+ip vrf BSKYB-TRUSTED
+
+ rd 65444:4905
+
+ route-target export 4589:44001940
+
+ route-target export 4589:44440670
+
+ route-target export 65444:9000
+
+ route-target import 4589:44001940
+
+ route-target import 4589:44440679
+
+ route-target import 65444:9001
+
+ route-target import 65444:8900
+
+ route-target import 65444:17201
+
+ route-target import 65444:17202
+
+ route-target import 65444:17203
+
+ route-target import 65444:17204
+
+ route-target import 65444:16504
+

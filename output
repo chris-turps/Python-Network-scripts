@@ -1,0 +1,298 @@
+hostname ar0-sky.scedi
+
+ip vrf BSKYB-ESM
+
+ rd 65444:4103
+
+ route-target export 4589:44001941
+
+ route-target import 4589:44001941
+
+ route-target import 4589:99000015
+
+ route-target import 4589:44440921
+
+ route-target import 65444:1045
+
+ route-target import 4589:44440679
+
+ip vrf BSKYB-SRDF-STORAGE
+
+ rd 65444:2409
+
+ route-target export 65444:2400
+
+ route-target import 65444:2400
+
+ip vrf BSKYB-TRUSTED
+
+ rd 65444:4905
+
+ route-target export 4589:44001940
+
+ route-target export 4589:44440670
+
+ route-target export 65444:9000
+
+ route-target import 4589:44001940
+
+ route-target import 4589:44440679
+
+ route-target import 65444:9001
+
+ route-target import 65444:8900
+
+ route-target import 65444:17201
+
+ route-target import 65444:17202
+
+ route-target import 65444:17203
+
+ route-target import 65444:17204
+
+ route-target import 65444:16504
+
+ip vrf BSKYB-UNTRUSTED
+
+ rd 65444:3113
+
+ route-target export 65444:3111
+
+ route-target export 4589:99065044
+
+ route-target export 4589:0
+
+ route-target import 65444:3111
+
+ route-target import 65444:3115
+
+ip vrf pe
+
+ rd 4589:99000001
+
+ route-target export 4589:0
+
+ route-target export 4589:99000001
+
+ route-target import 4589:99000001
+
+ip vrf uk-ips-mgmt-0000
+
+ rd 4589:44442570
+
+ route-target export 4589:44442571
+
+ route-target export 4589:44440560
+
+ route-target import 4589:44442570
+
+ route-target import 4589:44442724
+
+ route-target import 4589:44442727
+
+ route-target import 4589:44440679
+
+!! IOS XR Configuration 4.2.3
+
+TiMOS-C-10.0.R5 cpm/hops ALCATEL SR 7750 Copyright (c) 2000-2012 Alcatel-Lucent.
+
+# TiMOS-C-10.0.R5 cpm/hops ALCATEL SR 7750 Copyright (c) 2000-2012 Alcatel-Lucent.
+
+hostname ar3-sky.syost
+
+ip vrf BSKYB-DIGITAL
+
+ rd 4589:44001943
+
+ route-target export 4589:44001943
+
+ route-target import 4589:44001943
+
+ route-target import 4589:99000015
+
+ip vrf BSKYB-ESM
+
+ rd 4589:44001941
+
+ route-target export 4589:44001941
+
+ route-target import 4589:44001941
+
+ route-target import 4589:99000015
+
+ route-target import 4589:44440921
+
+ route-target import 65444:1045
+
+ip vrf BSKYB-GUEST-NAC
+
+ rd 65444:28806
+
+ route-target export 65444:28807
+
+ route-target import 65444:28800
+
+ip vrf BSKYB-TRUSTED
+
+ rd 4589:44001940
+
+ route-target export 4589:44001940
+
+ route-target export 4589:0
+
+ route-target export 65444:9000
+
+ route-target import 4589:44001940
+
+ route-target import 4589:99000015
+
+ route-target import 4589:44440911
+
+ route-target import 4589:44440931
+
+ route-target import 4589:44440450
+
+ route-target import 4589:44441810
+
+ route-target import 4589:44440679
+
+ route-target import 4589:44443101
+
+ route-target import 65444:9001
+
+ route-target import 65444:8900
+
+ route-target import 65444:17201
+
+ route-target import 65444:17202
+
+ route-target import 65444:17203
+
+ route-target import 65444:17204
+
+ip vrf BSKYB-UNTRUSTED
+
+ rd 4589:44001942
+
+ route-target export 4589:44001942
+
+ route-target import 4589:44001942
+
+ route-target import 4589:99000015
+
+ route-target import 4589:44440951
+
+ route-target import 4589:44440751
+
+ route-target import 4589:44440991
+
+ip vrf ITN-untrusted-video
+
+ rd 65444:22606
+
+ route-target export 65444:22600
+
+ route-target import 65444:22600
+
+ip vrf bskyb-voice
+
+ rd 65444:6802
+
+ route-target export 4589:44001945
+
+ route-target import 4589:44001945
+
+ip vrf pe
+
+ rd 4589:99000001
+
+ route-target export 4589:0
+
+ route-target export 4589:99000001
+
+ route-target import 4589:99000001
+
+ip vrf uk-bcnetmgmt-000
+
+ rd 4589:44442600
+
+ route-target export 4589:0
+
+ route-target export 4589:99065044
+
+ route-target export 4589:99065244
+
+ route-target export 4589:44442600
+
+ route-target import 4589:44442600
+
+ route-target import 4589:99000015
+
+ route-target import 4589:99000040
+
+ip vrf uk-bskyb-mgmt
+
+ rd 65444:5909
+
+ route-target export 4589:99000014
+
+ route-target export 4589:44440670
+
+ route-target import 4589:99000015
+
+ route-target import 4589:44440679
+
+ip vrf uk-bskyb-skybet-ipb
+
+ rd 65444:2649
+
+ route-target export 4589:0
+
+ route-target export 65444:2648
+
+ route-target import 65444:2648
+
+ route-target import 4589:99000015
+
+ route-target import 4589:99000040
+
+ip vrf uk-bskyb_skynewsvid-000
+
+ rd 4589:44441390
+
+ route-target export 4589:44441390
+
+ route-target export 4589:0
+
+ route-target import 4589:44441390
+
+ route-target import 4589:99000015
+
+ip vrf uk-bskyb_untrusted_skynewsvid-00
+
+ rd 65444:22501
+
+ route-target export 65444:22550
+
+ route-target export 4589:99065044
+
+ route-target export 4589:0
+
+ route-target import 65444:22560
+
+ip vrf uk-ips-mgmt-0000
+
+ rd 65444:16802
+
+ route-target export 4589:44442571
+
+ route-target export 4589:44440560
+
+ route-target import 4589:44442570
+
+ route-target import 4589:44442724
+
+ route-target import 4589:44442727
+
+ route-target import 4589:44440679
+
